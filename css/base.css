@@ -6,6 +6,12 @@ textarea {
     resize: vertical;
 }
 
+::selection {
+    text-shadow: none;
+    background: #333;
+    color: #fff;
+}
+
 /* ==========================================================================
    senderfund.com
    ========================================================================== */
@@ -13,27 +19,106 @@ textarea {
 body {
     font: 16px/26px 'Raleway', sans-serif;
 
-    background: url(../img/site-bg.jpg);
+    background: url(../img/site-bg.jpg) 50% 0;
 }
 
 h1, h2, h3, h4 {
+    font-weight: normal;
     text-transform: uppercase;
+    text-align: left;
 }
+    h4 {
+        font-style: italic;
+    }
+
+header {
+    background: url(../img/fsf-logo.png) no-repeat 50% 28%;
+    padding: 11em 0 2em 0;
+}
+
+header h1 {
+    margin: 1em auto;
+    width: 280px;
+    color: #FFF;
+
+    font-weight: lighter;
+}
+    header h1 span {
+        text-align: justify;
+        display: block;
+        line-height: 0.4em;
+    }
+        header h1 span:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+    header h1 span:first-of-type {
+        font-family: Georgia, serif;
+        font-size: 0.65em;
+
+        text-shadow: 2px 1px 6px rgba(0,0,0,0.15); /* larger text, lighter shadow */
+    }
+    header h1 span:last-of-type {
+        font-size: 0.3em;
+        text-shadow: 3px 1px 4px rgba(0,0,0,0.15);
+    }
 
 .content {
     background-color: #f7f8f8;
+    color: #8a8a8a;
+
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+
+    margin-bottom: 5em;
 }
+    .content a {
+        color: #e07f7f;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    .content h3 {
+        font-size: 1.3em;
+    }
+
+    .content h4 {
+        font-size: 1em;
+    }
+
+    .content p {
+
+    }
+
+    .content li {
+
+    }
 
 .content section {
     background-color: #FFF;
+    width: 90%;
+    padding: 1em 5%;
+    margin: 0;
 }
 
+section .giving-block img {
+    float: left;
+}
 
+section .giving-block h4 {
+    padding: 0.3em 0 0 5em;
+    text-align: left;
+}
 
-
-
-
-
+.content hr {
+    background-color: #dbdbdb;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    margin: 0;
+}
 
 /* ==========================================================================
    Media Queries
