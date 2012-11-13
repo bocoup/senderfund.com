@@ -19,7 +19,7 @@ textarea {
 body {
     font: 16px 'Raleway', sans-serif;
 
-    background: url(../img/site-bg.jpg) 50% 0;
+    background: url(/img/site-bg.jpg) 50% 0;
 }
 
 h1, h2, h3, h4 {
@@ -32,7 +32,7 @@ h1, h2, h3, h4 {
     }
 
 header {
-    background: url(../img/fsf-logo.png) no-repeat 50% 20%;
+    background: url(/img/fsf-logo.png) no-repeat 50% 20%;
 }
 
 header h1 {
