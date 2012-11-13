@@ -17,7 +17,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px 'Raleway', sans-serif;
+    font: 16px 'Raleway', sans-serif;
 
     background: url(../img/site-bg.jpg) 50% 0;
 }
@@ -57,6 +57,8 @@ header h1 {
         text-shadow: 2px 1px 6px rgba(0,0,0,0.25); /* larger text, lighter shadow */
     }
     header h1 span:last-of-type {
+        font-size: 0.4em;
+        font-family: inherit;
         text-shadow: 3px 1px 4px rgba(0,0,0,0.25);
     }
 
@@ -68,16 +70,29 @@ header h1 {
 
     margin-bottom: 5em;
 }
+    .content section {
+        padding-top: 2em;
+
+        background-color: #FFF;
+        width: 90%;
+        padding: 2em 5% 0 5%;
+        margin: 0 auto;
+
+        max-width: 900px;
+    }
+
     .content a {
         color: #e07f7f;
     }
 
     .content h2 {
         font-size: 1.5em;
+        margin-top: 0;
     }
 
     .content h3 {
         font-size: 1.3em;
+        margin-top: 0;
     }
 
     .content h4 {
@@ -92,15 +107,6 @@ header h1 {
 
     }
 
-.content section {
-    background-color: #FFF;
-    width: 90%;
-    padding: 1em 5%;
-    margin: 0 auto;
-
-    max-width: 960px;
-}
-
 section .giving-block img {
     float: left;
 }
@@ -114,9 +120,10 @@ section .giving-block h4 {
     background-color: #dbdbdb;
     border: 1px solid #dbdbdb;
     width: 100%;
-    margin: 0 auto;
 
-    max-width: 960px;
+    margin: 2em auto 0 auto;
+
+    max-width: 900px;
 }
 
 /* ==========================================================================
@@ -127,6 +134,10 @@ section .giving-block h4 {
 
     header {
         padding: 9em 0 1em 0;
+    }
+
+    .decor {
+        display: none;
     }
 
 }
@@ -166,13 +177,17 @@ section .giving-block h4 {
             font-size: 0.4em;
         }
 
+    .decor {
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
 
     header {
-        background: url(../img/fsf-logo.png) no-repeat 50% 28%;
-        padding: 11.5em 0 2.5em 0;
+        background: url(../img/fsf-logo.png) no-repeat 50% 26%;
+        padding: 10em 0 2em 0;
     }
 
     header h1 {
@@ -186,9 +201,52 @@ section .giving-block h4 {
             font-size: 0.5em;
         }
 
+    .mission h2 {
+        float: left;
+        width: 90%;
+    }
+
+    .decor {
+        display: block;
+        float: left;
+
+        margin-top: 0.2em;
+
+        font-size: 6em;
+
+        width: 5%;
+
+        vertical-align: middle;
+        text-align: center;
+
+        height: 0.35em;
+    }
+
+    .content section {
+        /*padding: 2em 5% 0 5%;*/
+        width: 90%;
+    }
+
+        .content section h3 {
+            margin: 1em 0 2em 0;
+        }
+
+    hr {
+        margin-top: 2em;
+    }
+
+    .additional-info {
+        margin-bottom: 2em;
+    }
+
+    .info-block {
+        float: left;
+        width: 50%;
+    }
+
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 960px) {
 
     header h1 {
         width: 600px;
