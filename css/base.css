@@ -102,9 +102,22 @@ header h1 {
             margin-bottom: 0;
         }
 
-    .content li {
+.content ul {
+    margin: 0.5em 0;
+    list-style: none;
 
+    font-style: italic;
+    font-size: 90%;
+
+    border-left: 1.5em solid #f7f8f8;
+    padding: 0 0 0.5em 0.75em;
+}
+    .content ul li {
+        margin-bottom: 0.5em
     }
+        .content ul li:last-of-type {
+            margin-bottom: 0;
+        }
 
 section .giving-block img {
     float: left;
@@ -182,6 +195,10 @@ section .giving-block h4 {
             font-size: 0.4em;
         }
 
+    .giving-block {
+        margin-top: 2em;
+    }
+
     .decor {
         display: none;
     }
@@ -215,8 +232,6 @@ section .giving-block h4 {
         display: block;
         float: left;
 
-        /*margin-top: 0.2em;*/
-
         font-size: 6em;
 
         width: 5%;
@@ -228,7 +243,6 @@ section .giving-block h4 {
     }
 
     .content section {
-        /*padding: 2em 5% 0 5%;*/
         width: 90%;
     }
 
@@ -244,6 +258,44 @@ section .giving-block h4 {
         float: left;
         width: 50%;
     }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .giving-block:first-of-type, .giving-block:nth-of-type(2) {
+        width: 44%;
+        float: left;
+        padding: 0 3%;
+
+        text-align: center;
+    }
+        .giving-block p, .giving-block li {
+            text-align: left;
+        }
+
+        section .giving-block h4 {
+            padding: 0.3em 0 0 0;
+            text-align: center;
+        }
+
+        section .giving-block img {
+            float: none;
+        }
+
+        .giving-block:first-of-type {
+            padding-left: 0;
+        }
+
+        .giving-block:nth-of-type(2) {
+            padding-right: 0;
+        }
+
+        .giving-block:last-of-type {
+            text-align: center;
+            clear: both;
+            padding-top: 1.5em;
+        }
 
 }
 
@@ -263,20 +315,13 @@ section .giving-block h4 {
     .giving-block {
         width: 30%;
         float: left;
+        margin-top: 0;
         padding: 0 2%;
 
         text-align: center;
     }
         .giving-block p, .giving-block li {
             text-align: left;
-        }
-
-        .giving-block ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-
-            font-style: italic;
         }
 
         section .giving-block h4 {
