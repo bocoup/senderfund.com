@@ -71,11 +71,9 @@ header h1 {
     margin-bottom: 5em;
 }
     .content section {
-        padding-top: 2em;
-
         background-color: #FFF;
         width: 90%;
-        padding: 2em 5% 0 5%;
+        padding: 3em 5% 0 5%;
         margin: 0 auto;
 
         max-width: 900px;
@@ -88,6 +86,7 @@ header h1 {
     .content h2 {
         font-size: 1.5em;
         margin-top: 0;
+        padding-top: 0;
     }
 
     .content h3 {
@@ -102,6 +101,9 @@ header h1 {
     .content p {
         line-height: 1.5em;
     }
+        .content p:last-of-type {
+            margin-bottom: 0;
+        }
 
     .content li {
 
@@ -127,7 +129,7 @@ section .giving-block h4 {
     border: 1px solid #dbdbdb;
     width: 100%;
 
-    margin: 2em auto 0 auto;
+    margin: 0 auto 3em auto;
 
     max-width: 900px;
 }
@@ -234,12 +236,8 @@ section .giving-block h4 {
     }
 
         .content section h3 {
-            margin: 1em 0 2em 0;
+            margin: 0 0 2em 0;
         }
-
-    hr {
-        margin-top: 2.5em;
-    }
 
     section.additional-info {
         padding-bottom: 2em;
