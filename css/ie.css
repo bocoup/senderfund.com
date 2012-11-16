@@ -3,5 +3,5 @@ header h1 span {
     font-size: 0.65em !important;
     line-height: 0.8em !important;
     display: block;
-    text-align: center;
+    text-align: center !important;
 }
